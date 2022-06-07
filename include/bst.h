@@ -53,7 +53,7 @@ class BST {
     }
 
  public:
-    BST() :root(nullptr) {}
+    BST() : root(nullptr) {}
     void add(const T& value) {
         root = addNode(root, value);
     }
