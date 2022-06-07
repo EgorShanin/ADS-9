@@ -2,8 +2,6 @@
 #ifndef INCLUDE_BST_H_
 #define INCLUDE_BST_H_
 
-#endif  // INCLUDE_BST_H_
-
 template<typename T>
 class BST {
  private:
@@ -65,4 +63,5 @@ class BST {
     int height() {
         return heightTree(root);
     }
-}
+};
+#endif  // INCLUDE_BST_H_
