@@ -12,9 +12,9 @@ BST<std::string> makeTree(const char* filename) {
             std::cout << "File error!" << std::endl;
             return 0;
       }
-      char letter = file.get();
       std::string word = "";
       while (!file.eof()) {
+            char letter = file.get();
             if (('z' >= letter) && ('a' <= letter)) {
                 word += letter;
             } else if (('Z' >= letter) && ('A' <= letter)) {
