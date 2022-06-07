@@ -61,7 +61,7 @@ class BST {
         return searchNode(root, value);
     }
     int depth() {
-        return heightTree(root);
+        return --heightTree(root);
     }
 };
 #endif  // INCLUDE_BST_H_
