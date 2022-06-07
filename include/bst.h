@@ -8,10 +8,10 @@ class BST {
     struct Node {
         T value;
         int count;
-        Node *left;
-        Node *right;
+        Node* left;
+        Node* right;
     };
-    Node root;
+    Node* root;
     Node* addNode(Node* root, const T& val) {
         if (root == nullptr) {
             root = new Node;
