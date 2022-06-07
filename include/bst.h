@@ -14,7 +14,7 @@ class BST {
         Node *right;
     };
     Node root;
-    Node* addNode(Node* root, T& val) {
+    Node* addNode(Node* root, const T& val) {
         if (root == nullptr) {
             root = new Node;
             root->value = val;
@@ -29,7 +29,7 @@ class BST {
         }
         return root;
     }
-    int searchNode(Node* root, T& val) {
+    int searchNode(Node* root, const T& val) {
         if (root == nullptr) {
             return 0;
         } else if (root->value == val) {
@@ -54,13 +54,14 @@ class BST {
         }
     }
  public:
-    BST(){root = nullptr;}
-    void add(T& value) {
+    BST() {root = nullptr;}
+    void add(const T& value) {
         root = addNode(root, value);
     }
-    int search(T& value) {
+    int search(const T& value) {
         return searchNode(root, value);
     }
     int height() {
         return heightTree(root);
     }
+}
